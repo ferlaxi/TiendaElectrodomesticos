@@ -33,69 +33,65 @@ La API "Tienda Electrodomésticos" utiliza los siguientes patrones de diseño pa
 
 #### **Microservicio Productos**
 ```http
-  POST /products/create
+  "POST /products/create"
 ```
 
 ```http
-  GET /products/get
+  "GET /products/get"
 ```
 
 ```http
-  GET /products/get/{productId}
+  "GET /products/get/{productId}"
 ```
 
 ```http
-  PUT /products/edit/{productId}
+  "PUT /products/edit/{productId}"
 ```
 
 ```http
-  DELETE /products/delete/{productId}
+  "DELETE /products/delete/{productId}"
 ```
 
 #### **Microservicio Carritos**
 
 ```http
-  POST /carts/create
+  "POST /carts/create"
 ```
 
 ```http
-  GET /carts/get
+  "GET /carts/get"
 ```
 
 ```http
-  GET /carts/get/{cartId}
+  "GET /carts/get/{cartId}"
 ```
 
 ```http
-  PUT /carts/edit/{cartId}
+  "PUT /carts/edit/{cartId}"
 ```
 
 ```http
-  DELETE /carts/delete/{cartId}
+  "DELETE /carts/delete/{cartId}"
 ```
 
 #### **Microservicio Ventas**
 
 ```http
-  POST /sales/create
+  "POST /sales/create"
 ```
 
 ```http
-  GET /sales/get
+  "GET /sales/get"
 ```
 
 ```http
-  GET /sales/get/{saleId}
+  "GET /sales/get/{saleId}"
 ```
 
 ```http
-  PUT /sales/edit/{saleId}
+  "PUT /sales/edit/{saleId}"
 ```
 
 ```http
-  DELETE /sales/delete/{saleId}
+  "DELETE /sales/delete/{saleId}"
 ```
-
-
-### 
-Desarrollado por [Fernando Laxi](https://www.linkedin.com/in/fer-laxi/). 👽
