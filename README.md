@@ -2,6 +2,11 @@
 
 La API "Tienda Electrodomésticos" está desarrollada con Java utilizando Spring Boot y Spring Cloud, implementando una arquitectura de microservicios que ofrece una solución escalable y modular para gestionar productos, carritos de compra y ventas de una tienda en línea de electrodomésticos. 
 
+## Características Principales
+- Arquitectura de microservicios con Spring Cloud para escalabilidad, resiliencia y gestión centralizada.
+- Gestión eficiente de productos, carrito de compras y ventas integradas mediante microservicios independientes.
+- Implementación de patrones de diseños para una arquitectura modular y eficiente.
+
 ## Arquitectura del proyecto 📚
 
 - **products-service**: Gestiona el inventario de productos y sus detalles.
@@ -27,9 +32,32 @@ La API "Tienda Electrodomésticos" utiliza los siguientes patrones de diseño pa
 
 - **Circuit Breaker de Resilience4J**: Protege los microservicios de fallos al detener el flujo de solicitudes hacia un servicio con problemas, evitando que los errores se propaguen.
 
+### Requisitos del Sistema
+
+- Java 17
+- MySQL
+- Maven
+
+### Instrucciones de Implementación
+
+1.  Clona el repositorio desde Github.
+
+2.  Configura el archivo application.properties con los datos de tu base de datos MySQL local:
+    (El archivo se encuentra en la ruta `src/main/resources/application.properties`)
+
+   ```properties
+        spring.jpa.hibernate.ddl-auto=update
+        spring.datasource.url=${DB_URL}
+        spring.datasource.username=${DB_USERNAME}
+        spring.datasource.password=${DB_PASSWORD}
+        spring.hibernate.database-platform=${DB_DIALECT}
+   ```
+
+4.  Ejecuta la aplicación.
 
 
-## Endpoints de cada Microservicio
+
+## API REST
 
 #### **Microservicio Productos**
 ```http
