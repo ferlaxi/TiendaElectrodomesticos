@@ -1,4 +1,4 @@
-# Tienda Electrodomésticos API 
+# Tienda Electrodomésticos TeleAPI 
 
 La API "Tienda Electrodomésticos" está desarrollada con Java utilizando Spring Boot y Spring Cloud, implementando una arquitectura de microservicios que ofrece una solución escalable y modular para gestionar productos, carritos de compra y ventas de una tienda en línea de electrodomésticos. 
 
